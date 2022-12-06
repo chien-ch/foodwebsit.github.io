@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Website</title>
+
+    <!--(font cdn)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--(swiper)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--(header)-->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"> Food.</i></a>
+      <nav class="navbar" id="navbar">
+        <a class="active" href="#home">首頁</a>
+        <a href="#dishes">餐廳</a>
+        <a href="#menu">菜單</a>
+        <a href="#about">關於我們</a>
+        <a href="#order">點餐</a>
+        <a href="#review">評論</a>
+      </nav>
+
+      <div class="icon">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-user" id="user-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+
+    <!--(search)-->
+    <form action="" id="search-form">
+      <input
+        type="search"
+        placeholder="search here..."
+        name=""
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!--(sign in)-->
+    <section class="sign-in" id="sign-in">
+      <div class="signIn-container">
+        <form class="signIn-form" id="signIn-form">
+          <label for="user-box"></label>
+          <i class="fas fa-times" id="close1"></i>
+          <h3>Welcome</h3>
+          <div>
+            <div class="user-box" id="user-box">
+              <input type="email" placeholder="enter your email" name="" />
+            </div>
+            <div class="user-box" id="user-box">
+              <input
+                type="password"
+                placeholder="enter your password"
+                name=""
+              />
+            </div>
+            <div class="user-box" id="user-box">
+              <input type="submit" value="Login" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--(start)-->
+    <section class="home" id="home">
+      <!---->
+      <div class="swiper mySwiper home-slider">
+        <!---->
+        <div class="swiper-wrapper wrapper">
+          <!---->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <h4>TODAY'S RECOMMED</h4>
+              <h3>香氣十足炒飯</h3>
+              <div class="offer">
+                <h5>OFFERS :</h5>
+                <p>5% off on minimum orders of $ 100</p>
+              </div>
+
+              <a href="#" class="btn">+order</a>
+            </div>
+            <div class="image">
+              <img src="./image/rice.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <h4>TODAY'S RECOMMED</h4>
+              <h3>知名炸雞</h3>
+              <div class="offer">
+                <h5>OFFERS :</h5>
+                <p>10% off on minimum orders of $ 100</p>
+              </div>
+
+              <a href="#" class="btn">+order </a>
+            </div>
+            <div class="image">
+              <img src="./image/fried chicken (1).png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <h4>TODAY'S RECOMMED</h4>
+              <h3>好吃火鍋</h3>
+              <div class="offer">
+                <h5>OFFERS :</h5>
+                <p>5% off on minimum orders of $ 200</p>
+              </div>
+
+              <a href="#" class="btn">+order </a>
+            </div>
+            <div class="image">
+              <img src="./image/hotpot.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--(dishes starts)-->
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">餐廳</h3>
+
+      <h1 class="heading">超人氣餐廳</h1>
+      <button class="btn1">All restaurants>>></button>
+      <div class="box-container">
+        <!---->
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <img src="./image/mac1.jpg" alt="" />
+          <h3>McDonald's 麥當勞</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+
+          <img src="./image/starbuck.jpg " alt="" />
+          <h3>STARBUCKS 星巴克</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+
+          <img src="./image/Mister Donut.jpg" alt="" />
+          <h3>Mister Donut</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+
+          <img src="./image/Louisa .jpg" alt="" />
+          <h3>Louisa 路易莎</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+
+          <img src="./image/Pizza Hut.jpg" alt="" />
+          <h3>Pizza Hut 必勝客</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+
+          <img src="./image/Häagen-Dazs.jpg" alt="" />
+          <h3>Häagen-Dazs 哈根達斯</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--(menu starts)-->
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">本月推薦</h3>
+      <h1 class="heading">SUPER AWESOME FOOOOD</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="tucker.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>個人披薩【6吋】</h3>
+            <p>Pizza專賣店</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$229</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="alison.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>太妃核果風味那堤</h3>
+            <p>STARBUCKS 星巴克</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$60</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="setiawan.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>宇治焙茶鮮奶</h3>
+            <p>迷客夏 Milksha</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$70</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="kazuend.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>超值套餐399(漢堡+炸物+飲品)</h3>
+            <p>美味小吃店</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$399</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="mario.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>套餐-雙層牛肉吉事堡 Double Cheeseburger Meal</h3>
+            <p>麥當勞</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$138</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="satria.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>套餐-勁辣鷄腿堡 Spicy Chicken Filet Burger Meal</h3>
+            <p>麥當勞</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$148</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="sala.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>酒蒸蛤蜊</h3>
+            <p>美味小吃店</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$160</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="agac.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>韓式套餐</h3>
+            <p>韓國</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$199</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="jakub-.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="start">
+              <i class="fas fa-user"></i>
+              <span>300+人已訂購</span>
+            </div>
+            <h3>韓式拌飯</h3>
+            <p>韓國</p>
+            <a href="#" class="btn">+</a>
+            <span class="pice">$110</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--(about start)-->
+    <section class="about" id="about">
+      <h3 class="sub-heading">關於我們</h3>
+      <h1 class="heading">why choose us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="heart.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>✓全台超過上萬間人氣店家－從美食到生鮮雜貨通通有，馬上點！</h3>
+          <h3>
+            ✓專業的外送夥伴，將在最短的時間內將你愛的餐點與生鮮雜貨外送給你。
+          </h3>
+          <h3>✓最親切有禮的客服，在家吃用餐也像VIP</h3>
+
+          <h2>美食到生鮮雜貨－在台灣，線上訂超簡單：</h2>
+
+          <div class="icon-container">
+            <div class="icon">
+              <i class="fas fa-shipping-fast"></i>
+              <span>加入會員免外送費</span>
+            </div>
+
+            <div class="icon">
+              <i class="fas fa-dollar-sign"></i>
+              <span>現金交易、信用卡付款</span>
+            </div>
+
+            <div class="icon">
+              <i class="fas fa-headset"></i>
+              <span>24小時線上客服</span>
+            </div>
+          </div>
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!--(order start)-->
+    <section class="order" id="order">
+      <h3 class="sub-heading">order now</h3>
+      <h1 class="heading">free and fast</h1>
+
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>your name</span>
+            <input type="text" placeholder="enter your name" />
+          </div>
+
+          <div class="input">
+            <span>your number</span>
+            <input type="text" placeholder="enter your number" />
+          </div>
+
+          <div class="input">
+            <span>your order</span>
+            <input type="text" placeholder="enter food name" />
+          </div>
+
+          <div class="input">
+            <span>additional food</span>
+            <input type="text" placeholder="enter with food" />
+          </div>
+
+          <div class="input">
+            <span>how much</span>
+            <input type="number" placeholder="how many orders" />
+          </div>
+
+          <div class="input">
+            <span>date and time</span>
+            <input type="datetime-local" />
+          </div>
+
+          <div class="input">
+            <span>your address</span>
+            <textarea
+              name=""
+              placeholder="enter your address"
+              id="address"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="input">
+            <span>your message</span>
+            <textarea
+              name=""
+              placeholder="enter your message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="order now" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <!--(review start)-->
+    <section class="review" id="review">
+      <!---->
+      <h3 class="sub-heading">評論</h3>
+      <h1 class="heading">they say</h1>
+
+      <div class="swiper-container review-slider">
+        <!---->
+        <div class="swiper-wrapper">
+          <!---->
+          <div class="swiper-slide slide">
+            <!---->
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="people1.jpg" alt="" />
+              <div class="user-info">
+                <h3>Amy</h3>
+                <div class="start">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Good, very delicious</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="people2.jpg" alt="" />
+              <div class="user-info">
+                <h3>Amy</h3>
+                <div class="start">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Good, very delicious</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="people3.jpg" alt="" />
+              <div class="user-info">
+                <h3>Amy</h3>
+                <div class="start">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Good, very delicious</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="people4.jpg" alt="" />
+              <div class="user-info">
+                <h3>Amy</h3>
+                <div class="start">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Good, very delicious</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--(food start)-->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>OTHER CUISINES</h3>
+          <a href="#">Taiwanese</a>
+          <a href="#">Chinese </a>
+          <a href="#">Japanese </a>
+          <a href="#">korean</a>
+          <a href="#">American </a>
+        </div>
+
+        <div class="box">
+          <h3>quick link</h3>
+          <a href="#">home</a>
+          <a href="#">dishes</a>
+          <a href="#">about</a>
+          <a href="#">menu</a>
+          <a href="#">rewiew</a>
+          <a href="#">order</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+123-456-789</a>
+          <a href="#">+135-246-000</a>
+          <a href="#">aaa@gmail.com</a>
+          <a href="#">bbb@gmail.com</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+
+      <div class="credit">@ 2022</div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
